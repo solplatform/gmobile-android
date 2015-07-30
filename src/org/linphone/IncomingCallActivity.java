@@ -34,6 +34,7 @@ import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.KeyEvent;
+import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -75,6 +76,22 @@ public class IncomingCallActivity extends Activity implements LinphoneSliderTrig
         // set this flag so this activity will stay in front of the keyguard
         int flags = WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED | WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD | WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON;
         getWindow().addFlags(flags);
+
+		ImageView accept = (ImageView) findViewById(R.id.accept);
+		accept.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				answer();
+			}
+		});
+
+		ImageView decline = (ImageView) findViewById(R.id.decline);
+		decline.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				decline();
+			}
+		});
 
         // "Dial-to-answer" widget for incoming calls.
 
