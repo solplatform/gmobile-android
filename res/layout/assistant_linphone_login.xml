@@ -19,7 +19,6 @@
 	    android:layout_width="match_parent"
 	    android:layout_height="match_parent"
 		android:orientation="vertical"
-	    android:paddingTop="20dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
 	    android:gravity="center">
@@ -83,25 +82,20 @@
 			android:paddingLeft="10dp"
 			android:paddingRight="10dp"
 			android:singleLine="true"/>
-        
-        <RelativeLayout
-            android:layout_marginTop="20dp"
-		    android:layout_width="match_parent"
-		    android:layout_height="wrap_content">
 
-			<Button
-				android:id="@+id/assistant_apply"
-				android:text="@string/assistant_apply"
-				android:background="@drawable/assistant_button"
-				style="@style/font8"
-				android:contentDescription="@string/content_description_validate"
-				android:layout_width="wrap_content"
-				android:paddingLeft="10dp"
-				android:paddingRight="10dp"
-				android:layout_centerInParent="true"
-				android:layout_height="wrap_content"
-				android:layout_centerVertical="true"/>
+		<Button
+			android:id="@+id/assistant_apply"
+			android:text="@string/assistant_apply"
+			android:background="@drawable/assistant_button"
+			style="@style/font8"
+			android:contentDescription="@string/content_description_validate"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:layout_marginTop="20dp"
+			android:layout_centerInParent="true"
+			android:layout_centerVertical="true"/>
 
-        </RelativeLayout>
 	</LinearLayout>
 </LinearLayout>
