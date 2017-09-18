@@ -23013,6 +23013,21 @@ SQLITE_PRIVATE const char *sqlite3OpcodeName(int i){
 #include <errno.h>
 #if !defined(SQLITE_OMIT_WAL) || SQLITE_MAX_MMAP_SIZE>0
 #include <sys/mman.h>
+
+#if defined(__ANDROID__)
+
+/*this block is to workaround a bug introduced by google with its unified headers in NDK 14.*/
+
+#include "android/api-level.h"
+
+#	ifdef __ANDROID_API_O__ /*present with unified headers introduced with NDK14*/
+#		if __ANDROID_API__ < 21
+		/*mmap declaration is missing below api 21 in unified headers, but not in normal headers*/
+		extern void* mmap(void*, size_t, int, int, int, off_t);
+#		endif
+#	endif
+#endif /*defined(ANDROID)*/
+
 #endif
 
 
