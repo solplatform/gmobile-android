@@ -18,18 +18,18 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 package org.linphone.tutorials;
 
-import org.linphone.R;
-import org.linphone.core.LinphoneCoreException;
-import org.linphone.core.tutorials.TutorialHelloWorld;
-import org.linphone.core.tutorials.TutorialNotifier;
-import org.linphone.mediastream.Log;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import org.linphone.R;
+import org.linphone.core.CoreException;
+import org.linphone.core.tutorials.TutorialHelloWorld;
+import org.linphone.core.tutorials.TutorialNotifier;
+import org.linphone.mediastream.Log;
 
 /**
  * Activity for displaying and starting the HelloWorld example on Android phone.
@@ -93,7 +93,7 @@ public class TutorialHelloWorldActivity extends Activity {
 						buttonCall.setEnabled(true);
 					}
 				});
-			} catch (LinphoneCoreException e) {
+			} catch (CoreException e) {
 				Log.e(e);
 			}
 		}
