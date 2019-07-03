@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
   <!--Custom-->
-  <string name="app_name">Linphone</string>
-  <string name="service_name">Linphone 服務</string>
-  <string name="addressbook_label">Linphone</string>
-  <string name="notification_title">Linphone</string>
+  <string name="app_name">GMobile</string>
+  <string name="service_name">GMobile 服務</string>
+  <string name="addressbook_label">GMobile</string>
+  <string name="notification_title">GMobile</string>
   <string name="wait_dialog_text">啟動中</string>
   <string name="notification_registered">%s 已註冊</string>
   <string name="notification_register_failure">%s 無法註冊</string>
   <string name="tunnel_host"></string>
-  <string name="about_version">Linphone Android %s</string>
-  <string name="about_liblinphone_version">Linphone Core %s</string>
-  <string name="about_link">www.linphone.org</string>
-  <string name="sync_account_name">Linphone 聯絡人</string>
+  <string name="about_version">GMobile Android %s</string>
+  <string name="about_liblinphone_version">GMobile Core %s</string>
+  <string name="about_link">www.gmobile.ltd</string>
+  <string name="sync_account_name">GMobile 聯絡人</string>
   <!--Common-->
   <string name="username">使用者名稱</string>
   <string name="userid">使用者 id（選擇性）</string>
@@ -49,7 +49,7 @@
   <string name="yes">是</string>
   <string name="link_account">連結你的帳號</string>
   <!--Launch screen-->
-  <string name="app_description"><i>自由的</i> SIP 客戶端</string>
+
   <!--Assistant-->
   <string name="welcome">歡迎</string>
   <string name="assistant">助理</string>
@@ -61,20 +61,20 @@
   <string name="assistant_validate_account_1">你的帳號已經建立。請檢查你的信現來驗證你的帳號：</string>
   <string name="assistant_validate_account_2">一旦完成，請回到這裡並按下按鈕。</string>
   <string name="assistant_welcome_desc">這個助理將會幫助您設定與使用您的 SIP 帳號。</string>
-  <string name="assistant_linphone_login_desc">請輸入您 Linphone 帳號的使用者名稱與密碼</string>
+  <string name="assistant_linphone_login_desc">請輸入您 GMobile 帳號的使用者名稱與密碼</string>
   <string name="assistant_login_desc">請輸入您 SIP 網域的使用者名稱與密碼</string>
   <string name="assistant_remote_provisioning_desc">請提供配置網址</string>
   <string name="transport">傳輸</string>
   <string name="assistant_create_account_phone_number_address">你的 SIP 位置是</string>
-  <string name="assistant_login_linphone">使用 Linphone 帳號</string>
+  <string name="assistant_login_linphone">使用 GMobile 帳號</string>
   <string name="assistant_login_generic">使用 SIP 帳號</string>
   <string name="assistant_remote_provisioning">擷取遠端設定</string>
   <string name="assistant_create_account_part_1">請確認您的國家代碼並輸入您的電話號碼</string>
   <string name="assistant_create_account_part_2">我們已經傳送一則包含驗證碼的簡訊到您的電話號碼：</string>
   <string name="assistant_create_account_part_3">要完成您的電話號碼驗證，請在下面輸入四位數的驗證碼：\n</string>
-  <string name="assistant_create_account_part_email">請輸入您 Linphone 帳號的使用者名稱、電子郵件與密碼</string>
+  <string name="assistant_create_account_part_email">請輸入您 GMobile 帳號的使用者名稱、電子郵件與密碼</string>
   <string name="assistant_display_name_optional">顯示名稱(選擇性)</string>
-  <string name="assistant_linphone_account">使用你的 Linphone 帳號</string>
+  <string name="assistant_linphone_account">使用你的 GMobile 帳號</string>
   <string name="assistant_generic_account">使用 SIP 帳號</string>
   <string name="assistant_remote_provisioning_title">擷取遠端設定</string>
   <string name="assistant_fetch_apply">擷取並套用</string>
@@ -110,9 +110,9 @@
   <string name="use_email_for_validation">使用電子郵件位址來驗證帳號</string>
   <string name="login_with_username">使用使用者名稱和密碼而不是電話號碼</string>
   <string name="phone_number_info_title">我的電話號碼會用來做什麼？</string>
-  <string name="phone_number_info_content">\n由於您的電話號碼，您的朋友會更容易找到您。\n\n您會在通訊錄中看到誰在用 Linphone，您的朋友也會知道他們可以使用 Linphone 來聯絡您。\n</string>
-  <string name="phone_number_link_info_content">\n如果您將帳號連結到電話號碼，您的朋友會更容易找到您\n\n您會在通訊錄中看到誰在使用 Linphone，而您的朋友也會知道他們能用 Linphone 與您聯繫。\n</string>
-  <string name="phone_number_link_info_content_already_account">您只能將電話號碼用在一個 Linphone 帳號。\n\n如果您已將您的號碼連結到其他帳號，但您希望使用此號碼，只需現在連結，您的號碼就會自動轉移到此帳號。</string>
+  <string name="phone_number_info_content">\n由於您的電話號碼，您的朋友會更容易找到您。\n\n您會在通訊錄中看到誰在用 GMobile，您的朋友也會知道他們可以使用 GMobile 來聯絡您。\n</string>
+  <string name="phone_number_link_info_content">\n如果您將帳號連結到電話號碼，您的朋友會更容易找到您\n\n您會在通訊錄中看到誰在使用 GMobile，而您的朋友也會知道他們能用 GMobile 與您聯繫。\n</string>
+  <string name="phone_number_link_info_content_already_account">您只能將電話號碼用在一個 GMobile 帳號。\n\n如果您已將您的號碼連結到其他帳號，但您希望使用此號碼，只需現在連結，您的號碼就會自動轉移到此帳號。</string>
   <!--Status-->
   <string name="invalid_email">無效的電子郵件</string>
   <string name="account_already_exist">帳號已經存在</string>
@@ -344,7 +344,7 @@
   <string name="pref_auto_answer_time">自動應答時間（毫秒）</string>
   <string name="pref_call_timeout_title">通話逾時（毫秒）</string>
   <string name="pref_voice_mail">語音郵件 URI</string>
-  <string name="pref_dialer_call">將 Linphone 設為預設電話應用程式</string>
+  <string name="pref_dialer_call">將 GMobile 設為預設電話應用程式</string>
   <!--Chat settings-->
   <string name="pref_chat_title">聊天</string>
   <string name="pref_image_sharing_server_title">分享伺服器</string>
@@ -417,7 +417,7 @@
   <string name="content_description_search_contact">搜尋聯絡人</string>
   <string name="content_description_search_country">搜尋國家</string>
   <string name="content_description_all_contacts">所有聯絡人</string>
-  <string name="content_description_linphone_contacts">Linphone 聯絡人</string>
+  <string name="content_description_linphone_contacts">GMobile 聯絡人</string>
   <string name="content_description_call_direction">通話方向</string>
   <string name="content_description_all_calls">所有通話</string>
   <string name="content_description_missed_calls">未接來電</string>

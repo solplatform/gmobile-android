@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
   <!--Custom-->
-  <string name="app_name">Linphone</string>
-  <string name="service_name">Linphone-Dienst</string>
-  <string name="addressbook_label">Linphone</string>
-  <string name="notification_title">Linphone</string>
+  <string name="app_name">GMobile</string>
+  <string name="service_name">GMobile-Dienst</string>
+  <string name="addressbook_label">GMobile</string>
+  <string name="notification_title">GMobile</string>
   <string name="wait_dialog_text">Startvorgang</string>
   <string name="notification_registered">%s registriert</string>
   <string name="notification_register_failure">%s konnte nicht registrieren</string>
   <string name="tunnel_host"></string>
-  <string name="about_version">Linphone Android %s</string>
-  <string name="about_liblinphone_version">Linphone-Kern %s</string>
-  <string name="about_link">www.linphone.org</string>
-  <string name="sync_account_name">Linphone-Kontakte</string>
+  <string name="about_version">GMobile Android %s</string>
+  <string name="about_liblinphone_version">GMobile-Kern %s</string>
+  <string name="about_link">www.gmobile.ltd</string>
+  <string name="sync_account_name">GMobile-Kontakte</string>
   <!--Common-->
   <string name="username">Benutzername</string>
   <string name="userid">Benutzerkennung (optional)</string>
@@ -62,20 +62,20 @@
   <string name="assistant_validate_account_1">Ihr Konto ist erstellt. Bitte überprüfen Sie Ihre E-Mails, um Ihr Konto zu bestätigen.</string>
   <string name="assistant_validate_account_2">Sobald das gemacht ist, kommen Sie wieder her und klicken auf die Schaltfläche.</string>
   <string name="assistant_welcome_desc">Dieser Assistent hilft Ihnen beim Konfigurieren und Nutzen Ihres SIP-Kontos.</string>
-  <string name="assistant_linphone_login_desc">Bitte geben Sie Ihren Benutzernamen und Ihr Passwort des Linphone-Kontos ein</string>
+  <string name="assistant_linphone_login_desc">Bitte geben Sie Ihren Benutzernamen und Ihr Passwort des GMobile-Kontos ein</string>
   <string name="assistant_login_desc">Bitte geben Sie Ihren Benutzernamen und Ihr Passwort mit Ihrer SIP-Domäne ein</string>
   <string name="assistant_remote_provisioning_desc">Bitte geben Sie eine Bereitstellungs-URL an</string>
   <string name="transport">Transport</string>
   <string name="assistant_create_account_phone_number_address">Ihre SIP-Adresse ist</string>
-  <string name="assistant_login_linphone">Linphone-Konto verwenden</string>
+  <string name="assistant_login_linphone">GMobile-Konto verwenden</string>
   <string name="assistant_login_generic">SIP-Konto verwenden</string>
   <string name="assistant_remote_provisioning">Fernkonfiguration abrufen</string>
   <string name="assistant_create_account_part_1">Bitte bestätigen Sie Ihre Landesvorwahl und geben Sie Ihre Telefonnummer ein</string>
   <string name="assistant_create_account_part_2">Wir haben Ihnen eine SMS mit einem Bestätigungscode an Ihre Telefonnummer gesendet.</string>
   <string name="assistant_create_account_part_3">Geben Sie bitte den folgenden 4-stelligen Code ein, um Ihre Telefonnummernbestätigung abzuschließen:\n</string>
-  <string name="assistant_create_account_part_email">Bitte geben Sie einen Benutzernamen, eine E-Mail-Adresse und ein Passwort für Ihr Linphone-Konto ein</string>
+  <string name="assistant_create_account_part_email">Bitte geben Sie einen Benutzernamen, eine E-Mail-Adresse und ein Passwort für Ihr GMobile-Konto ein</string>
   <string name="assistant_display_name_optional">Anzeigename (optional)</string>
-  <string name="assistant_linphone_account">Verwenden Sie Ihr Linphone-Konto</string>
+  <string name="assistant_linphone_account">Verwenden Sie Ihr GMobile-Konto</string>
   <string name="assistant_generic_account">SIP-Konto verwenden</string>
   <string name="assistant_remote_provisioning_title">Fernkonfiguration abrufen</string>
   <string name="assistant_fetch_apply">Abrufen und anwenden</string>
@@ -362,7 +362,7 @@
   <string name="pref_sipinfo_dtmf">Sende out-band DTMFs(SIP INFO)</string>
   <string name="pref_call_timeout_title">Anruf-Zeitüberschreitung (in Sekunden)</string>
   <string name="pref_voice_mail">Sprachnachricht-URI</string>
-  <string name="pref_dialer_call">Linphone als Standard-Telefon-App verwenden</string>
+  <string name="pref_dialer_call">GMobile als Standard-Telefon-App verwenden</string>
   <!--Chat settings-->
   <string name="pref_chat_title">Nachrichten</string>
   <string name="pref_image_sharing_server_title">Gemeinsamer Server</string>
@@ -442,7 +442,7 @@
   <string name="content_description_search_contact">Kontakt suchen</string>
   <string name="content_description_search_country">Land suchen</string>
   <string name="content_description_all_contacts">Alle Kontakte</string>
-  <string name="content_description_linphone_contacts">Linphone-Kontakte</string>
+  <string name="content_description_linphone_contacts">GMobile-Kontakte</string>
   <string name="content_description_call_direction">Anrufrichtung</string>
   <string name="content_description_all_calls">Alle Anrufe</string>
   <string name="content_description_missed_calls">Verpasste Anrufe</string>

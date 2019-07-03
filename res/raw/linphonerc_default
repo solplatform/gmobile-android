@@ -1,5 +1,5 @@
 [sip]
-contact="Linphone Android" <sip:linphone.android@unknown-host>
+contact="GMobile Android" <sip:gmobile.android@unknown-host>
 use_info=0
 use_ipv6=1
 keepalive_period=30000
@@ -20,5 +20,5 @@ host=
 port=443
 
 [misc]
-log_collection_upload_server_url=https://www.linphone.org:444/lft.php
-file_transfer_server_url=https://www.linphone.org:444/lft.php
+log_collection_upload_server_url=https://gmobile.tech:444/lft.php
+file_transfer_server_url=https://gmobile.tech:444/lft.php

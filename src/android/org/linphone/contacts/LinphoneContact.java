@@ -40,6 +40,8 @@ import org.linphone.core.PresenceModel;
 import org.linphone.core.SubscribePolicy;
 import org.linphone.mediastream.Log;
 
+import org.linphone.LinphonePreferences;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -147,7 +149,7 @@ public class LinphoneContact implements Serializable, Comparable<LinphoneContact
 
         firstName = fn;
         lastName = ln;
-        if (fullName == null) {
+        //if (fullName == null) {
             if (firstName != null && lastName != null && firstName.length() > 0 && lastName.length() > 0) {
                 fullName = firstName + " " + lastName;
             } else if (firstName != null && firstName.length() > 0) {
@@ -155,7 +157,7 @@ public class LinphoneContact implements Serializable, Comparable<LinphoneContact
             } else if (lastName != null && lastName.length() > 0) {
                 fullName = lastName;
             }
-        }
+        //}
     }
 
     public String getFirstName() {
@@ -343,7 +345,7 @@ public class LinphoneContact implements Serializable, Comparable<LinphoneContact
         if (noa != null && noa.getValue() != null) {
             if (isAndroidContact()) {
                 if (noa.getOldValue() == null) {
-                    if (noa.isSIPAddress() && LinphoneManager.getInstance().getContext().getResources().getBoolean(R.bool.use_linphone_tag)) {
+                    if (noa.isSIPAddress() && LinphonePreferences.instance().isUseGmobileTag()) {
                         if (androidTagId != null) {
                             addChangesToCommit(ContentProviderOperation.newInsert(ContactsContract.Data.CONTENT_URI)
                                     .withValue(ContactsContract.Data.RAW_CONTACT_ID, androidTagId)
@@ -391,7 +393,7 @@ public class LinphoneContact implements Serializable, Comparable<LinphoneContact
                         }
                     }
                 } else {
-                    if (noa.isSIPAddress() && LinphoneManager.getInstance().getContext().getResources().getBoolean(R.bool.use_linphone_tag)) {
+                    if (noa.isSIPAddress() && LinphonePreferences.instance().isUseGmobileTag()) {
                         if (androidTagId != null) {
                             addChangesToCommit(ContentProviderOperation.newUpdate(ContactsContract.Data.CONTENT_URI)
                                     .withSelection(ContactsContract.Data.RAW_CONTACT_ID + "=? AND " + ContactsContract.Data.DATA1 + "=? ", new String[]{androidTagId, noa.getOldValue()})
@@ -641,7 +643,7 @@ public class LinphoneContact implements Serializable, Comparable<LinphoneContact
 
     public void getAndroidIds() {
         androidRawId = findRawContactID();
-        if (LinphoneManager.getInstance().getContext().getResources().getBoolean(R.bool.use_linphone_tag)) {
+        if (LinphonePreferences.instance().isUseGmobileTag()) {
             androidTagId = findLinphoneRawContactId();
         }
     }
@@ -776,7 +778,7 @@ public class LinphoneContact implements Serializable, Comparable<LinphoneContact
     }
 
     private void createLinphoneTagIfNeeded() {
-        if (LinphoneManager.getInstance().getContext().getResources().getBoolean(R.bool.use_linphone_tag)) {
+        if (LinphonePreferences.instance().isUseGmobileTag()) {
             if (androidTagId == null && findLinphoneRawContactId() == null) {
                 createLinphoneContactTag();
             }

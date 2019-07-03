@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
   <!--Custom-->
-  <string name="app_name">Linphone</string>
-  <string name="service_name">Служба Linphone</string>
-  <string name="addressbook_label">Linphone</string>
-  <string name="notification_title">Linphone</string>
+  <string name="app_name">GMobile</string>
+  <string name="service_name">Служба GMobile</string>
+  <string name="addressbook_label">GMobile</string>
+  <string name="notification_title">GMobile</string>
   <string name="wait_dialog_text">Загружается</string>
   <string name="notification_registered">%s зарегистрирован</string>
   <string name="notification_register_failure">%s зарегистрировать не удалось</string>
   <string name="tunnel_host"></string>
-  <string name="about_version">Linphone Android %s</string>
-  <string name="about_liblinphone_version">Linphone ядро %s</string>
-  <string name="about_link">www.linphone.org</string>
-  <string name="sync_account_name">контакты linphone</string>
+  <string name="about_version">GMobile Android %s</string>
+  <string name="about_liblinphone_version">GMobile ядро %s</string>
+  <string name="about_link">www.gmobile.ltd</string>
+  <string name="sync_account_name">контакты gmobile</string>
   <!--Common-->
   <string name="username">Имя пользователя</string>
   <string name="userid">Идентификатор пользователя (необязательно)</string>
@@ -30,7 +30,6 @@
   <string name="accept">Принять</string>
   <string name="open">Открыть</string>
   <string name="continue_text">Продолжить</string>
-  <string name="about">О программе</string>
   <string name="deny">Отклонить</string>
   <string name="no_account">Нет настроенных аккаунтов</string>
   <string name="search">Поиск</string>
@@ -50,8 +49,6 @@
   <string name="yes">Да</string>
   <string name="link_account">Связать ваш аккаунт</string>
   <string name="update_available">Доступно обновление</string>
-  <!--Launch screen-->
-  <string name="app_description">это <i>бесплатный</i> SIP-клиент</string>
   <!--Assistant-->
   <string name="welcome">Добро пожаловать</string>
   <string name="assistant">Ассистент</string>
@@ -63,20 +60,20 @@
   <string name="assistant_validate_account_1">Ваш аккаунт создан. Для подтверждения аккаунта проверьте свою почту:</string>
   <string name="assistant_validate_account_2">После этого вернитесь и нажмите кнопку.</string>
   <string name="assistant_welcome_desc">Этот помощник поможет вам настроить и использовать свой SIP-аккаунт.</string>
-  <string name="assistant_linphone_login_desc">Введите имя пользователя и пароль аккаунта Linphone</string>
+  <string name="assistant_linphone_login_desc">Введите имя пользователя и пароль аккаунта GMobile</string>
   <string name="assistant_login_desc">Введите имя пользователя и пароль вашего домена SIP</string>
   <string name="assistant_remote_provisioning_desc">Укажите URL-адрес конфигурации</string>
   <string name="transport">Транспорт</string>
   <string name="assistant_create_account_phone_number_address">Ваш SIP-адрес</string>
-  <string name="assistant_login_linphone">Использовать аккаунт Linphone</string>
+  <string name="assistant_login_linphone">Использовать аккаунт GMobile</string>
   <string name="assistant_login_generic">Использовать SIP-аккаунт</string>
   <string name="assistant_remote_provisioning">Загрузить удалённую конфигурацию</string>
   <string name="assistant_create_account_part_1">Подтвердите код страны и введите свой номер телефона</string>
   <string name="assistant_create_account_part_2">Мы отправили SMS-сообщение с кодом подтверждения на ваш номер телефона:</string>
   <string name="assistant_create_account_part_3">Чтобы завершить проверку номера телефона, введите 4-значный код ниже:\n</string>
-  <string name="assistant_create_account_part_email">Введите имя пользователя, адрес электронной почты и пароль для вашего аккаунта Linphone</string>
+  <string name="assistant_create_account_part_email">Введите имя пользователя, адрес электронной почты и пароль для вашего аккаунта GMobile</string>
   <string name="assistant_display_name_optional">Отображаемое имя (необязательно)</string>
-  <string name="assistant_linphone_account">Использовать аккаунт Linphone</string>
+  <string name="assistant_linphone_account">Использовать аккаунт GMobile</string>
   <string name="assistant_generic_account">Использовать SIP-аккаунт</string>
   <string name="assistant_remote_provisioning_title">Загрузить удалённую конфигурацию</string>
   <string name="assistant_fetch_apply">Загрузить и применить</string>
@@ -112,9 +109,9 @@
   <string name="use_email_for_validation">Использовать адрес электронной почты для проверки аккаунта</string>
   <string name="login_with_username">Вместо номера телефона использовать имя пользователя и пароль</string>
   <string name="phone_number_info_title">Для чего будет использоваться мой номер телефона?</string>
-  <string name="phone_number_info_content">\nВашим друзьям будет проще связаться с вами, если вы свяжете свой аккаунт со своим номером телефона.\n\n В вашей адресной книге вы увидите, кто использует Linphone, а ваши друзья смогут узнать, что вы также зарегистрированы в Linphone.\n</string>
-  <string name="phone_number_link_info_content">\nВашим друзьям будет проще связаться с вами, если вы свяжете свой аккаунт со своим номером телефона.\n\nВ вашей адресной книге вы увидите, кто использует Linphone, а ваши друзья смогут узнать, что вы также зарегистрированы в Linphone.\n</string>
-  <string name="phone_number_link_info_content_already_account">Номер телефона можно использовать только с одним аккаунтом Linphone.\n\nЕсли ваш номер уже был связан с другим аккаунтом, но вы предпочитаете использовать его, просто свяжите его сейчас, и ваш номер будет автоматически перенесен в этот аккаунт.</string>
+  <string name="phone_number_info_content">\nВашим друзьям будет проще связаться с вами, если вы свяжете свой аккаунт со своим номером телефона.\n\n В вашей адресной книге вы увидите, кто использует GMobile, а ваши друзья смогут узнать, что вы также зарегистрированы в GMobile.\n</string>
+  <string name="phone_number_link_info_content">\nВашим друзьям будет проще связаться с вами, если вы свяжете свой аккаунт со своим номером телефона.\n\nВ вашей адресной книге вы увидите, кто использует GMobile, а ваши друзья смогут узнать, что вы также зарегистрированы в GMobile.\n</string>
+  <string name="phone_number_link_info_content_already_account">Номер телефона можно использовать только с одним аккаунтом GMobile.\n\nЕсли ваш номер уже был связан с другим аккаунтом, но вы предпочитаете использовать его, просто свяжите его сейчас, и ваш номер будет автоматически перенесен в этот аккаунт.</string>
   <!--Status-->
   <string name="invalid_email">Недопустимый адрес электронной почты</string>
   <string name="account_already_exist">Аккаунт уже существует</string>
@@ -219,6 +216,7 @@
   <!--Side Menu-->
   <string name="menu_assistant">Ассистент</string>
   <string name="menu_settings">Настройки</string>
+  <string name="menu_invitation">Пригласить</string>
   <string name="menu_about">О программе</string>
   <string name="quit">Выход</string>
   <!--Call-->
@@ -369,7 +367,7 @@
   <string name="pref_sipinfo_dtmf">Отправить вне потока DTMFs(SIP INFO)</string>
   <string name="pref_call_timeout_title">Таймаут вызова(в секундах)</string>
   <string name="pref_voice_mail">URI голосовой почты</string>
-  <string name="pref_dialer_call">Использовать Linphone в качестве приложения для звонков по умолчанию.</string>
+  <string name="pref_dialer_call">Использовать GMobile в качестве приложения для звонков по умолчанию.</string>
   <!--Chat settings-->
   <string name="pref_chat_title">Чат</string>
   <string name="pref_image_sharing_server_title">Сервер обмена</string>
@@ -408,6 +406,7 @@
   <string name="pref_animation_enable_title">Включить анимацию</string>
   <string name="pref_service_notification">Включить сервисное уведомление</string>
   <string name="pref_autostart">Запуск во время загрузки</string>
+  <string name="pref_use_gmobile_tag">Откл. автосинхронизацию контактов</string>
   <string name="pref_incoming_call_timeout_title">Отклонение входящего вызова (в секундах)</string>
   <string name="pref_remote_provisioning_title">Удаленное конфигурирование</string>
   <string name="pref_android_app_settings_title">Параметры приложения в Android</string>
@@ -449,7 +448,7 @@
   <string name="content_description_search_contact">Поиск контакта</string>
   <string name="content_description_search_country">Поиск страны</string>
   <string name="content_description_all_contacts">Все контакты</string>
-  <string name="content_description_linphone_contacts">Контакты Linphone</string>
+  <string name="content_description_linphone_contacts">Контакты GMobile</string>
   <string name="content_description_call_direction">Направление вызова</string>
   <string name="content_description_all_calls">Все вызовы</string>
   <string name="content_description_missed_calls">Пропущенные вызовы</string>

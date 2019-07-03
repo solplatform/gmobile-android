@@ -33,6 +33,7 @@
 
 	<string name="pref_ipv6_key">pref_ipv6_key</string>
 
+	<string name="menu_invitation_key">menu_invitation_key</string>
 	<string name="menu_about_key">menu_about_key</string>
 	<string name="pref_sipaccounts_key">pref_sipaccounts_key</string>
 	<string name="setup_key">setup_key</string>
@@ -84,6 +85,7 @@
     <string name="pref_proxy_push_notif_key">pref_proxy_push_notif_key</string>
     <string name="pref_echo_cancellation_key">pref_echo_cancellation_key</string>
     <string name="pref_autostart_key">pref_autostart_key</string>
+	<string name="pref_use_gmobile_tag_key">pref_use_gmobile_tag_key</string>
     <string name="pref_enable_outbound_proxy_key">Outbound proxy</string>
     <string name="pref_codec_pcma_key">pref_codec_pcma_key</string>
     <string name="pref_codec_pcmu_key">pref_codec_pcmu_key</string>

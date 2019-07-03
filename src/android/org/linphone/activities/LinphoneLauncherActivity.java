@@ -77,7 +77,8 @@ public class LinphoneLauncherActivity extends Activity {
                 }
             } else if (Intent.ACTION_VIEW.equals(action)) {
                 if (LinphoneService.isReady()) {
-                    addressToCall = ContactsManager.getInstance().getAddressOrNumberForAndroidContact(getContentResolver(), intent.getData());
+                    //addressToCall = ContactsManager.getInstance().getAddressOrNumberForAndroidContact(getContentResolver(), intent.getData());
+                    addressToCall = intent.getData().toString();
                 } else {
                     uriToResolve = intent.getData();
                 }
@@ -150,7 +151,8 @@ public class LinphoneLauncherActivity extends Activity {
                     }
                 }
                 if (uriToResolve != null) {
-                    addressToCall = ContactsManager.getInstance().getAddressOrNumberForAndroidContact(getContentResolver(), uriToResolve);
+                    //addressToCall = ContactsManager.getInstance().getAddressOrNumberForAndroidContact(getContentResolver(), uriToResolve);
+                    addressToCall = uriToResolve.toString();
                     Log.i("LinphoneLauncher", "Intent has uri to resolve : " + uriToResolve.toString());
                     uriToResolve = null;
                 }

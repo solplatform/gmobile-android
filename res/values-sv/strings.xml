@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
   <!--Custom-->
-  <string name="app_name">Linphone</string>
-  <string name="service_name">Linphone-tjänst</string>
-  <string name="addressbook_label">Linphone</string>
-  <string name="notification_title">Linphone</string>
+  <string name="app_name">GMobile</string>
+  <string name="service_name">GMobile-tjänst</string>
+  <string name="addressbook_label">GMobile</string>
+  <string name="notification_title">GMobile</string>
   <string name="wait_dialog_text">Startar upp</string>
   <string name="notification_registered">%s registrerad</string>
   <string name="notification_register_failure">%s misslyckades med att registrera sig</string>
   <string name="tunnel_host"></string>
-  <string name="about_version">Linphone Android %s</string>
-  <string name="about_liblinphone_version">Linphone Core %s</string>
-  <string name="about_link">www.linphone.org</string>
-  <string name="sync_account_name">linphone-kontakter</string>
+  <string name="about_version">GMobile Android %s</string>
+  <string name="about_liblinphone_version">GMobile Core %s</string>
+  <string name="about_link">www.gmobile.ltd</string>
+  <string name="sync_account_name">gmobile-kontakter</string>
   <!--Common-->
   <string name="username">Användarnamn</string>
   <string name="userid">Användar-ID (valfritt)</string>
@@ -50,7 +50,7 @@
   <string name="yes">Ja</string>
   <string name="link_account">Länka ditt konto</string>
   <!--Launch screen-->
-  <string name="app_description"><i>libre</i> SIP-klient</string>
+
   <!--Assistant-->
   <string name="welcome">Välkommen</string>
   <string name="assistant">Assistent</string>
@@ -62,20 +62,20 @@
   <string name="assistant_validate_account_1">Ditt konto har skapats. Kontrollera dina mejl för att validera ditt konto:</string>
   <string name="assistant_validate_account_2">När det är klart, kom tillbaka hit och klicka på knappen.</string>
   <string name="assistant_welcome_desc">Den här assistenten hjälper dig att konfigurera och använda ditt SIP-konto.</string>
-  <string name="assistant_linphone_login_desc">Ange ditt användarnamn och lösenord för Linphone-kontot</string>
+  <string name="assistant_linphone_login_desc">Ange ditt användarnamn och lösenord för GMobile-kontot</string>
   <string name="assistant_login_desc">Ange ditt användarnamn och lösenord med din SIP-domän</string>
   <string name="assistant_remote_provisioning_desc">Ange din provisioneringsadress</string>
   <string name="transport">Transport</string>
   <string name="assistant_create_account_phone_number_address">Din SIP-adress är</string>
-  <string name="assistant_login_linphone">Använd Linphone-konto</string>
+  <string name="assistant_login_linphone">Använd GMobile-konto</string>
   <string name="assistant_login_generic">Använd SIP-konto</string>
   <string name="assistant_remote_provisioning">Hämta fjärrkonfiguration</string>
   <string name="assistant_create_account_part_1">Bekräfta landskoden och ange ditt telefonnummer</string>
   <string name="assistant_create_account_part_2">Vi har skickat ett SMS med en validerings kod till ditt telefonnummer:</string>
   <string name="assistant_create_account_part_3">För att slutföra ditt telefonnummer verifiering ange den 4-siffriga koden nedan:\n</string>
-  <string name="assistant_create_account_part_email">Ange ett användarnamn, e-postadress och lösenord för ditt Linphone-konto</string>
+  <string name="assistant_create_account_part_email">Ange ett användarnamn, e-postadress och lösenord för ditt GMobile-konto</string>
   <string name="assistant_display_name_optional">Visningsnamn (valfritt)</string>
-  <string name="assistant_linphone_account">Använd ditt Linphone-konto</string>
+  <string name="assistant_linphone_account">Använd ditt GMobile-konto</string>
   <string name="assistant_generic_account">Använd SIP-konto</string>
   <string name="assistant_remote_provisioning_title">Hämta fjärrkonfiguration</string>
   <string name="assistant_fetch_apply">Hämta och tillämpa</string>
@@ -111,9 +111,9 @@
   <string name="use_email_for_validation">Använd e-postadress för kontovalidering</string>
   <string name="login_with_username">Använd ditt användarnamn och lösenord istället för ditt telefonnummer</string>
   <string name="phone_number_info_title">Vad ska mitt telefonnummer användas för?</string>
-  <string name="phone_number_info_content">\nTack vare ditt telefonnummer kommer dina vänner att hitta dig lättare.\n\n Du kommer att se i din adressbok vem som använder Linphone och dina vänner kommer veta att de kan nå dig på Linphone också.\n</string>
-  <string name="phone_number_link_info_content">\nDina vänner hittar dig lättare om du kopplar ditt konto till ditt telefonnummer\n\nDu ser i din adressbok vilka som använder Linphone och dina vänner vet att de når dig på Linphone också.\n</string>
-  <string name="phone_number_link_info_content_already_account">Du kan bara använda ditt telefonnummer med ett Linphone-konto.\n\nOm du redan har länkat ditt nummer till ett annat konto, men du föredrar att använda det här, kopplar du bara det nu och ditt nummer flyttas automatiskt till det här kontot.</string>
+  <string name="phone_number_info_content">\nTack vare ditt telefonnummer kommer dina vänner att hitta dig lättare.\n\n Du kommer att se i din adressbok vem som använder GMobile och dina vänner kommer veta att de kan nå dig på GMobile också.\n</string>
+  <string name="phone_number_link_info_content">\nDina vänner hittar dig lättare om du kopplar ditt konto till ditt telefonnummer\n\nDu ser i din adressbok vilka som använder GMobile och dina vänner vet att de når dig på GMobile också.\n</string>
+  <string name="phone_number_link_info_content_already_account">Du kan bara använda ditt telefonnummer med ett GMobile-konto.\n\nOm du redan har länkat ditt nummer till ett annat konto, men du föredrar att använda det här, kopplar du bara det nu och ditt nummer flyttas automatiskt till det här kontot.</string>
   <!--Status-->
   <string name="invalid_email">Ogiltig e-post</string>
   <string name="account_already_exist">Konto finns redan</string>
@@ -367,7 +367,7 @@
   <string name="pref_rfc2833_dtmf">Skicka in-band DTMF (RFC2833)</string>
   <string name="pref_sipinfo_dtmf">Skicka ut-band DTMF (SIP INFO)</string>
   <string name="pref_voice_mail">Röstbrevlåda URI</string>
-  <string name="pref_dialer_call">Använd Linphone som standard telefonapp</string>
+  <string name="pref_dialer_call">Använd GMobile som standard telefonapp</string>
   <!--Chat settings-->
   <string name="pref_chat_title">Chatt</string>
   <string name="pref_image_sharing_server_title">Delar server</string>
@@ -445,7 +445,7 @@
   <string name="content_description_search_contact">Sök kontakt</string>
   <string name="content_description_search_country">Sök land</string>
   <string name="content_description_all_contacts">Alla kontakter</string>
-  <string name="content_description_linphone_contacts">Linphone-kontakter</string>
+  <string name="content_description_linphone_contacts">GMobile-kontakter</string>
   <string name="content_description_call_direction">Samtalsriktning</string>
   <string name="content_description_all_calls">Alla samtal</string>
   <string name="content_description_missed_calls">Missade samtal</string>

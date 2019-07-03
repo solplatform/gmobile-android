@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
   <!--Custom-->
-  <string name="app_name">Linphone</string>
-  <string name="service_name">Linphone Service</string>
-  <string name="addressbook_label">Linphone</string>
-  <string name="notification_title">Linphone</string>
+  <string name="app_name">GMobile</string>
+  <string name="service_name">GMobile Service</string>
+  <string name="addressbook_label">GMobile</string>
+  <string name="notification_title">GMobile</string>
   <string name="wait_dialog_text">Começando</string>
   <string name="notification_registered">%s registrado</string>
   <string name="notification_register_failure">%s falhou ao registrar</string>
   <string name="tunnel_host"></string>
-  <string name="about_version">Linphone Android %s</string>
-  <string name="about_liblinphone_version">Linphone Core %s</string>
-  <string name="about_link">www.linphone.org</string>
-  <string name="sync_account_name">Linphone Contatos</string>
+  <string name="about_version">GMobile Android %s</string>
+  <string name="about_liblinphone_version">GMobile Core %s</string>
+  <string name="about_link">www.gmobile.ltd</string>
+  <string name="sync_account_name">GMobile Contatos</string>
   <!--Common-->
   <string name="username">Usuário</string>
   <string name="userid">ID do usuário (opcional)</string>
@@ -51,7 +51,7 @@
   <string name="link_account">Conecte sua conta</string>
   <string name="update_available">Uma atualização está disponível</string>
   <!--Launch screen-->
-  <string name="app_description">O cliente SIP <i>livre</i></string>
+
   <!--Assistant-->
   <string name="welcome">Bem-vindo</string>
   <string name="assistant">Assistente</string>
@@ -63,20 +63,20 @@
   <string name="assistant_validate_account_1">Sua conta foi criada. Por favor, confira suas mensagens para validar sua conta.</string>
   <string name="assistant_validate_account_2">Quando estiver pronto, volte aqui e clique no botão.</string>
   <string name="assistant_welcome_desc">O assistente o ajudará a configurar e usar sua conta SIP.</string>
-  <string name="assistant_linphone_login_desc">Por favor, digite o nome de usuário e a senha de sua conta Linphone.</string>
+  <string name="assistant_linphone_login_desc">Por favor, digite o nome de usuário e a senha de sua conta GMobile.</string>
   <string name="assistant_login_desc">Por favor, digite seu usuário e senha com seu domínio SIP.</string>
   <string name="assistant_remote_provisioning_desc">Por favor forneça sua URL de provisionamento </string>
   <string name="transport">Protocolo</string>
   <string name="assistant_create_account_phone_number_address">Seu endereço SIP é</string>
-  <string name="assistant_login_linphone">Use conta Linphone.</string>
+  <string name="assistant_login_linphone">Use conta GMobile.</string>
   <string name="assistant_login_generic">Use conta SIP</string>
   <string name="assistant_remote_provisioning">Buscar configuração remota</string>
   <string name="assistant_create_account_part_1">Por favor, confirme o código de seu país e digite o número de seu telefone.</string>
   <string name="assistant_create_account_part_2">Nós enviamos para você em seu telefone um SMS com um código de validação:</string>
   <string name="assistant_create_account_part_3">Para completar a verificação de seu número de telefone, por favor, digite abaixo o código com 4 números:\n</string>
-  <string name="assistant_create_account_part_email">Por favor, digite um nome de usuário, um email e uma senha para sua conta Linphone</string>
+  <string name="assistant_create_account_part_email">Por favor, digite um nome de usuário, um email e uma senha para sua conta GMobile</string>
   <string name="assistant_display_name_optional">Mostrar nome (opcional)</string>
-  <string name="assistant_linphone_account">Use sua conta Linphone</string>
+  <string name="assistant_linphone_account">Use sua conta GMobile</string>
   <string name="assistant_generic_account">Use conta SIP</string>
   <string name="assistant_remote_provisioning_title">Buscar configuração remota.</string>
   <string name="assistant_fetch_apply">Buscar e aplicar</string>
@@ -112,9 +112,9 @@
   <string name="use_email_for_validation">Use um endereço de email para validação da conta</string>
   <string name="login_with_username">Use seu nome de usuário e email em vez de seu número de telefone</string>
   <string name="phone_number_info_title">Para que será usado meu número de telefone?</string>
-  <string name="phone_number_info_content">\nObrigado por fornecer seu número de telefone, assim seus amigos poderão localizá-lo mais facilmente.\n\n Você verá em seu livro de endereços quem usa o Linphone e seus amigos saberão que você também usa o Linphone.\n</string>
-  <string name="phone_number_link_info_content">\nSeus amigos encontrarão você mais facilmente caso conecte sua conta ao seu número de telefone\n\nVocê verá em seu livro de endereços quem usa o Linphone e seus amigos saberão que eles também poderão encontrar você no Linphone.\n</string>
-  <string name="phone_number_link_info_content_already_account">Você pode usar seu número de telefone com somente uma conta Linphone.\n\nCaso você já tenha conectado seu número a outra conta, mas prefira usar esta, simplesmente faça a conexão agora e seu número será automaticamente transferido para esta conta.</string>
+  <string name="phone_number_info_content">\nObrigado por fornecer seu número de telefone, assim seus amigos poderão localizá-lo mais facilmente.\n\n Você verá em seu livro de endereços quem usa o GMobile e seus amigos saberão que você também usa o GMobile.\n</string>
+  <string name="phone_number_link_info_content">\nSeus amigos encontrarão você mais facilmente caso conecte sua conta ao seu número de telefone\n\nVocê verá em seu livro de endereços quem usa o GMobile e seus amigos saberão que eles também poderão encontrar você no GMobile.\n</string>
+  <string name="phone_number_link_info_content_already_account">Você pode usar seu número de telefone com somente uma conta GMobile.\n\nCaso você já tenha conectado seu número a outra conta, mas prefira usar esta, simplesmente faça a conexão agora e seu número será automaticamente transferido para esta conta.</string>
   <!--Status-->
   <string name="invalid_email">Email inválido.</string>
   <string name="account_already_exist">Esta conta já existe.</string>
@@ -369,7 +369,7 @@
   <string name="pref_sipinfo_dtmf">Enviar out-band DTMFs(SIP INFO)</string>
   <string name="pref_call_timeout_title">Tempo de expiração da chamada (em segundos)</string>
   <string name="pref_voice_mail">Correio de voz URI</string>
-  <string name="pref_dialer_call">Use o Linphone como seu aplicativo padrão de telefonia.</string>
+  <string name="pref_dialer_call">Use o GMobile como seu aplicativo padrão de telefonia.</string>
   <!--Chat settings-->
   <string name="pref_chat_title">Chat</string>
   <string name="pref_image_sharing_server_title">Servidor de compartilhamento</string>

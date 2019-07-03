@@ -2,18 +2,18 @@
 <resources>
 
     <!-- Custom -->
-    <string name="app_name">Linphone</string>
-    <string name="service_name">Linphone Service</string>
-    <string name="addressbook_label">Linphone</string>
-    <string name="notification_title">Linphone</string>
+    <string name="app_name">GMobile</string>
+    <string name="service_name">GMobile Service</string>
+    <string name="addressbook_label">GMobile</string>
+    <string name="notification_title">GMobile</string>
     <string name="wait_dialog_text">Starting up</string>
     <string name="notification_registered">%s registered</string>
     <string name="notification_register_failure">%s failed to register</string>
     <string name="tunnel_host"></string>
-    <string name="about_version">Linphone Android %s</string>
-    <string name="about_liblinphone_version">Linphone Core %s</string>
-    <string name="about_link">www.linphone.org</string>
-    <string name="sync_account_name">linphone contacts</string>
+    <string name="about_version">GMobile Android %s</string>
+    <string name="about_liblinphone_version">GMobile Core %s</string>
+    <string name="about_link">www.gmobile.ltd</string>
+    <string name="sync_account_name">gmobile contacts</string>
 
     <!-- Common -->
     <string name="username">Username</string>
@@ -54,7 +54,7 @@
     <string name="update_available">An update is available</string>
 
     <!-- Launch screen -->
-    <string name="app_description">the <i>libre</i> SIP client</string>
+    <string name="app_description">Secure SIP client</string>
 
     <!-- Assistant -->
     <string name="welcome">Welcome</string>
@@ -67,20 +67,20 @@
     <string name="assistant_validate_account_1">Your account is created. Please check your mails to validate your account:</string>
     <string name="assistant_validate_account_2">Once it is done, come back here and click on the button.</string>
     <string name="assistant_welcome_desc">This assistant will help you configure and use your SIP account.</string>
-    <string name="assistant_linphone_login_desc">Please enter your username and password of Linphone account</string>
+    <string name="assistant_linphone_login_desc">Please enter your username and password of GMobile account</string>
     <string name="assistant_login_desc">Please enter your username and password with your SIP domain</string>
     <string name="assistant_remote_provisioning_desc">Please provide your provisioning URL</string>
     <string name="transport">Transport</string>
     <string name="assistant_create_account_phone_number_address">Your SIP address is</string>
-    <string name="assistant_login_linphone">Use Linphone account</string>
+    <string name="assistant_login_linphone">Use GMobile account</string>
     <string name="assistant_login_generic">Use SIP account</string>
     <string name="assistant_remote_provisioning">Fetch remote configuration</string>
     <string name="assistant_create_account_part_1">Please confirm your country code and enter your phone number</string>
     <string name="assistant_create_account_part_2">We have sent you a SMS with a validation code to your phone number:</string>
     <string name="assistant_create_account_part_3">To complete your phone number verification, please enter the 4 digit code below:\n</string>
-    <string name="assistant_create_account_part_email">Please enter an username, email and password for your Linphone account</string>
+    <string name="assistant_create_account_part_email">Please enter an username, email and password for your GMobile account</string>
     <string name="assistant_display_name_optional">Display name (optional)</string>
-    <string name="assistant_linphone_account">Use your Linphone account</string>
+    <string name="assistant_linphone_account">Use your GMobile account</string>
     <string name="assistant_generic_account">Use SIP account</string>
     <string name="assistant_remote_provisioning_title">Fetch remote configuration</string>
     <string name="assistant_fetch_apply">Fetch and apply</string>
@@ -116,9 +116,9 @@
     <string name="use_email_for_validation">Use email address for account validation</string>
     <string name="login_with_username">Use your username and password instead of your phone number</string>
     <string name="phone_number_info_title">What will my phone number be used for?</string>
-    <string name="phone_number_info_content">\nThanks to your phone number, your friends will find you more easily.\n\n You will see in your address book who is using Linphone and your friends will know that they can reach you on Linphone as well.\n</string>
-    <string name="phone_number_link_info_content">\nYour friends will find you more easily if you link your account to your phone number\n\nYou will see in your address book who is using Linphone and your friends will know that they can reach you on Linphone as well.\n</string>
-    <string name="phone_number_link_info_content_already_account">You can only use your phone number with one Linphone account.\n\nIf you had already linked your number to an other account but you prefer to use this one, simply link it now and your number will automatically be moved to this account.</string>
+    <string name="phone_number_info_content">\nThanks to your phone number, your friends will find you more easily.\n\n You will see in your address book who is using GMobile and your friends will know that they can reach you on GMobile as well.\n</string>
+    <string name="phone_number_link_info_content">\nYour friends will find you more easily if you link your account to your phone number\n\nYou will see in your address book who is using GMobile and your friends will know that they can reach you on GMobile as well.\n</string>
+    <string name="phone_number_link_info_content_already_account">You can only use your phone number with one GMobile account.\n\nIf you had already linked your number to an other account but you prefer to use this one, simply link it now and your number will automatically be moved to this account.</string>
 
     <!-- Status -->
     <string name="invalid_email">Invalid email</string>
@@ -232,6 +232,7 @@
     <!-- Side Menu -->
     <string name="menu_assistant">Assistant</string>
     <string name="menu_settings">Settings</string>
+    <string name="menu_invitation">Invitation</string>
     <string name="menu_about">About</string>
     <string name="quit">Quit</string>
 
@@ -393,7 +394,7 @@
     <string name="pref_sipinfo_dtmf">Send out-band DTMFs (SIP INFO)</string>
     <string name="pref_call_timeout_title">Call timeout (in seconds)</string>
     <string name="pref_voice_mail">Voice mail URI</string>
-    <string name="pref_dialer_call">Use Linphone as default phone app</string>
+    <string name="pref_dialer_call">Use GMobile as default phone app</string>
 
     <!-- Chat settings -->
     <string name="pref_chat_title">Chat</string>
@@ -435,6 +436,7 @@
     <string name="pref_animation_enable_title">Enable Animations</string>
     <string name="pref_service_notification">Enable service notification</string>
     <string name="pref_autostart">Start at boot time</string>
+    <string name="pref_use_gmobile_tag">Off contact auto-sync</string>
     <string name="pref_incoming_call_timeout_title">Incoming call hangup (in seconds)</string>
     <string name="pref_remote_provisioning_title">Remote provisioning</string>
     <string name="pref_android_app_settings_title">Android app settings</string>
@@ -479,7 +481,7 @@
     <string name="content_description_search_contact">Search contact</string>
     <string name="content_description_search_country">Search country</string>
     <string name="content_description_all_contacts">All contacts</string>
-    <string name="content_description_linphone_contacts">Linphone contacts</string>
+    <string name="content_description_linphone_contacts">GMobile contacts</string>
     <string name="content_description_call_direction">Call direction</string>
     <string name="content_description_all_calls">All calls</string>
     <string name="content_description_missed_calls">Missed calls</string>
@@ -522,8 +524,8 @@
     <string name="content_description_call_options">Call options</string>
     <string name="content_description_audio_route">Audio route</string>
     <string name="content_description_exit_conference">Exit conference</string>
-    <string name="content_title_notification_service">Linphone service notification</string>
-    <string name="content_title_notification">Linphone instant messages notifications</string>
+    <string name="content_title_notification_service">GMobile service notification</string>
+    <string name="content_title_notification">GMobile instant messages notifications</string>
     <string name="content_description_conversation_subject">Group chat room subject</string>
     <string name="content_description_conversation_infos">Group chat room info</string>
 </resources>

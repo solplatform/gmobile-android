@@ -581,6 +581,12 @@ public class AssistantActivity extends Activity implements OnClickListener, Acti
             progress.getWindow().setBackgroundDrawable(d);
             progress.setContentView(R.layout.progress_dialog);
             progress.show();
+        } else {
+            if (dialog == null || !dialog.isShowing()) {
+                dialog = createErrorDialog(LinphoneManager.getLc().getDefaultProxyConfig(), getString(R.string.wizard_server_unavailable));
+                dialog.setCancelable(false);
+                dialog.show();
+            }
         }
     }
 

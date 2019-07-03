@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
   <!--Custom-->
-  <string name="app_name">Linphone</string>
-  <string name="service_name">Linphone სერვისი</string>
-  <string name="addressbook_label">Linphone</string>
-  <string name="notification_title">Linphone</string>
+  <string name="app_name">GMobile</string>
+  <string name="service_name">GMobile სერვისი</string>
+  <string name="addressbook_label">GMobile</string>
+  <string name="notification_title">GMobile</string>
   <string name="wait_dialog_text">მიმდინარეობს გაშვება</string>
   <string name="notification_registered">%s დარეგისტრირებულია</string>
   <string name="notification_register_failure">%s-ის დარეგისტრირება ვერ მოხერხდა</string>
   <string name="tunnel_host"></string>
-  <string name="about_version">Linphone Android %s</string>
-  <string name="about_liblinphone_version">Linphone ბირთვი %s</string>
-  <string name="about_link">www.linphone.org</string>
-  <string name="sync_account_name">linphone კონტაქტები</string>
+  <string name="about_version">GMobile Android %s</string>
+  <string name="about_liblinphone_version">GMobile ბირთვი %s</string>
+  <string name="about_link">www.gmobile.ltd</string>
+  <string name="sync_account_name">gmobile კონტაქტები</string>
   <!--Common-->
   <string name="username">მომხმარებლის სახელი</string>
   <string name="userid">User-id (არასავალდებულო)</string>
@@ -51,7 +51,7 @@
   <string name="link_account">ანგარიშის მიბმა</string>
   <string name="update_available">ხელმისაწვდომია განახლება</string>
   <!--Launch screen-->
-  <string name="app_description"><i>თავისუფალი</i> SIP კლიენტი</string>
+
   <!--Assistant-->
   <string name="welcome">კეთილი იყოს თქვენი მობრძანება</string>
   <string name="assistant">ასისტენტი</string>
@@ -63,20 +63,20 @@
   <string name="assistant_validate_account_1">თქვენი ანგარიში შექმნილია. გთხოვთ, შეამოწმოთ თქვენი ელფოსტა ანგარიშის დასადასტურებლად:</string>
   <string name="assistant_validate_account_2">როდესაც მზად იქნება, დაბრუნდით აქ და დააჭირეთ ღილაკს.</string>
   <string name="assistant_welcome_desc">ეს ასისტენტი დაგეხმარებათ დააკონფიგურიროთ და გამოიყენოთ თქვენი SIP ანგარიში.</string>
-  <string name="assistant_linphone_login_desc">გთხოვთ, შეიყვანოთ თქვენი Linphone ანგარიშის მომხმარებლის სახელი და პაროლი</string>
+  <string name="assistant_linphone_login_desc">გთხოვთ, შეიყვანოთ თქვენი GMobile ანგარიშის მომხმარებლის სახელი და პაროლი</string>
   <string name="assistant_login_desc">გთხოვთ, შეიყვანოთ თქვენი მომხმარებლის სახელი და პაროლი SIP დომენთან ერთად</string>
   <string name="assistant_remote_provisioning_desc">გთხოვთ, მიუთითოთ პროვიზიული URL</string>
   <string name="transport">ტრანსპორტი</string>
   <string name="assistant_create_account_phone_number_address">თქვენი SIP მისამართ არის</string>
-  <string name="assistant_login_linphone">Linphone ანგარიშის გამოყენება</string>
+  <string name="assistant_login_linphone">GMobile ანგარიშის გამოყენება</string>
   <string name="assistant_login_generic">SIP ანგარიშის გამოყენება</string>
   <string name="assistant_remote_provisioning">დაშორებული კონფიგურაციის მიღება</string>
   <string name="assistant_create_account_part_1">გთხოვთ, დაადასტუროთ თქვენი ქვეყნის კოდი და შეიყვანოთ თქვენი ტელეფონის ნომერი</string>
   <string name="assistant_create_account_part_2">ჩვენ გამოგიგზავნეთ მოკლე ტექსტური შეტყობინება დადასტურების კოდით თქვენს ტელეფონის ნომერზე:</string>
   <string name="assistant_create_account_part_3">თქვენი ტელეფონის ნომრის ვერიფიკაციისთვის, გთხოვთ, შეიყვანოთ 4-ნიშნა კოდი ქვემოთ:\n</string>
-  <string name="assistant_create_account_part_email">გთხოვთ, შეიყვანოთ მომხმარებლის სახელი, ელფოსტა და პაროლი თქვენი Linphone ანგარიშისთვის</string>
+  <string name="assistant_create_account_part_email">გთხოვთ, შეიყვანოთ მომხმარებლის სახელი, ელფოსტა და პაროლი თქვენი GMobile ანგარიშისთვის</string>
   <string name="assistant_display_name_optional">სახელი (არა სავალდებულო)</string>
-  <string name="assistant_linphone_account">თქვენი Linphone ანგარიშის გამოყენება</string>
+  <string name="assistant_linphone_account">თქვენი GMobile ანგარიშის გამოყენება</string>
   <string name="assistant_generic_account">SIP ანგარიშის გამოყენება</string>
   <string name="assistant_remote_provisioning_title">დაშორებული კონფიგურაციის მიღება</string>
   <string name="assistant_fetch_apply">გადმოწერა და მიღება</string>
@@ -112,9 +112,9 @@
   <string name="use_email_for_validation">ელფოსტის მისამართის გამოყენება ანგარიშის დასადატურებლად</string>
   <string name="login_with_username">თქვენი მომხმარებლის სახელის და პაროლის გამოყენება თქვენი ტელეფონის ნომრის მაგივრად</string>
   <string name="phone_number_info_title">რისთვის იქნება გამოყენებული ჩემი ტელეფონის ნომერი?</string>
-  <string name="phone_number_info_content">\nთქვენი ტელეფონის ნომრის დახმარებით, თქვენი მეგობრები შეძლებენ გიპოვონ უფრო მარტივად.\n\nთქვენ დაინახავთ თქვენს მისამართები წიგნში ვინ იყენებს Linphone-ს და თქვენს მეგობრებს ეცოდინებათ, რომ შეუძლიათ ასევე დაგიკავშირდნენ Linphone-ით.\n</string>
-  <string name="phone_number_link_info_content">\nთქვენი მეგობრები გიპოვიან უფრო მარტივად, თუ მიაბამთ თქვენს ანგარიშს თქვენს ტელფონის ნომერზე.\n\nთქვენ დაინახავთ თქვენს მისამართები წიგნში ვინ იყენებს Linphone-ს და თქვენს მეგობრებს ეცოდინებათ, რომ შეუძლიათ ასევე დაგიკავშირდნენ Linphone-ით.\n</string>
-  <string name="phone_number_link_info_content_already_account">თქვენ შეგიძლიათ გამოიყენოთ თქვენი ტელეფონის ნომერი მხოლოდ ერთ Linphone ანგარიშთან.\n\nთუ უკვე მიბმული გაქვთ თქვენი ნომერი სხვა ანგარიშზე, მაგრამ გსურთ ამის გამოყენება, უბრალოდ მიაბით იგი ახლა და თქვენი ნომერი იქნება ავტომატურად გადმოტანილი ამ ანგარიშზე.</string>
+  <string name="phone_number_info_content">\nთქვენი ტელეფონის ნომრის დახმარებით, თქვენი მეგობრები შეძლებენ გიპოვონ უფრო მარტივად.\n\nთქვენ დაინახავთ თქვენს მისამართები წიგნში ვინ იყენებს GMobile-ს და თქვენს მეგობრებს ეცოდინებათ, რომ შეუძლიათ ასევე დაგიკავშირდნენ GMobile-ით.\n</string>
+  <string name="phone_number_link_info_content">\nთქვენი მეგობრები გიპოვიან უფრო მარტივად, თუ მიაბამთ თქვენს ანგარიშს თქვენს ტელფონის ნომერზე.\n\nთქვენ დაინახავთ თქვენს მისამართები წიგნში ვინ იყენებს GMobile-ს და თქვენს მეგობრებს ეცოდინებათ, რომ შეუძლიათ ასევე დაგიკავშირდნენ GMobile-ით.\n</string>
+  <string name="phone_number_link_info_content_already_account">თქვენ შეგიძლიათ გამოიყენოთ თქვენი ტელეფონის ნომერი მხოლოდ ერთ GMobile ანგარიშთან.\n\nთუ უკვე მიბმული გაქვთ თქვენი ნომერი სხვა ანგარიშზე, მაგრამ გსურთ ამის გამოყენება, უბრალოდ მიაბით იგი ახლა და თქვენი ნომერი იქნება ავტომატურად გადმოტანილი ამ ანგარიშზე.</string>
   <!--Status-->
   <string name="invalid_email">არასწორი ელფოსტა</string>
   <string name="account_already_exist">ანგარიში უკვე არსებობს</string>
@@ -369,7 +369,7 @@
   <string name="pref_sipinfo_dtmf">არხის-გარე DTMF-ების გაგზავნა(SIP INFO)</string>
   <string name="pref_call_timeout_title">ზარის ტაიმაუტი (წამებში)</string>
   <string name="pref_voice_mail">ხმოვანი ფოსტის URI</string>
-  <string name="pref_dialer_call">Linphone-ის გამოყენება ნაგულისხმევი ტელეფონის აპლიკაციად</string>
+  <string name="pref_dialer_call">GMobile-ის გამოყენება ნაგულისხმევი ტელეფონის აპლიკაციად</string>
   <!--Chat settings-->
   <string name="pref_chat_title">ჩატი</string>
   <string name="pref_image_sharing_server_title">მიმდინარეობს სერვერის გაზიარება</string>
@@ -449,7 +449,7 @@
   <string name="content_description_search_contact">კონტაქტის ძიება</string>
   <string name="content_description_search_country">ქვეყნის ძიება</string>
   <string name="content_description_all_contacts">ყველა კონტაქტი</string>
-  <string name="content_description_linphone_contacts">Linphone-ის კონტაქტები</string>
+  <string name="content_description_linphone_contacts">GMobile-ის კონტაქტები</string>
   <string name="content_description_call_direction">ზარის მიმართულები</string>
   <string name="content_description_all_calls">ყველა ზარი</string>
   <string name="content_description_missed_calls">გამოტოვებული ზარი</string>

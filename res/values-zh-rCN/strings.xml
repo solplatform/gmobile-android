@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
   <!--Custom-->
-  <string name="app_name">Linphone</string>
-  <string name="service_name">Linphone服务</string>
-  <string name="addressbook_label">Linphone</string>
-  <string name="notification_title">Linphone</string>
+  <string name="app_name">GMobile</string>
+  <string name="service_name">GMobile服务</string>
+  <string name="addressbook_label">GMobile</string>
+  <string name="notification_title">GMobile</string>
   <string name="wait_dialog_text">启动</string>
   <string name="notification_registered">%s已注册</string>
   <string name="notification_register_failure">%s无法注册</string>
   <string name="tunnel_host"></string>
-  <string name="about_version">Linphone Android%s</string>
-  <string name="about_liblinphone_version">Linphone Core%s</string>
-  <string name="about_link">www.linphone.org</string>
-  <string name="sync_account_name">linphone联系人</string>
+  <string name="about_version">GMobile Android%s</string>
+  <string name="about_liblinphone_version">GMobile Core%s</string>
+  <string name="about_link">www.gmobile.ltd</string>
+  <string name="sync_account_name">gmobile联系人</string>
   <!--Common-->
   <string name="username">用户名</string>
   <string name="phone_number">电话号码</string>
@@ -58,20 +58,20 @@
   <string name="assistant_validate_account_1">您的帐户已经创建。请检查邮件来激活您的帐户。</string>
   <string name="assistant_validate_account_2">一旦完成，请返回并点击此处</string>
   <string name="assistant_welcome_desc">助手将会帮助您配置和使用您的SIP帐户</string>
-  <string name="assistant_linphone_login_desc">请输入您 Linphone帐户的用户名和密码</string>
+  <string name="assistant_linphone_login_desc">请输入您 GMobile帐户的用户名和密码</string>
   <string name="assistant_login_desc">请输入您 SIP 域名的帐户用户名和密码</string>
   <string name="assistant_remote_provisioning_desc">请输入您的配置文件 URL地址</string>
   <string name="transport">传输</string>
   <string name="assistant_create_account_phone_number_address">您的SIP地址是？</string>
-  <string name="assistant_login_linphone">使用Linphone帐户</string>
+  <string name="assistant_login_linphone">使用GMobile帐户</string>
   <string name="assistant_login_generic">使用SIP 帐户</string>
   <string name="assistant_remote_provisioning">获取远程配置</string>
   <string name="assistant_create_account_part_1">请确认您所在的国家编码和电话号码。</string>
   <string name="assistant_create_account_part_2">我们已向您的手机发错了短信激活码</string>
   <string name="assistant_create_account_part_3">请输入4位数字码来完成验证</string>
-  <string name="assistant_create_account_part_email">请为您的Linphone帐户输入用户名和密码</string>
+  <string name="assistant_create_account_part_email">请为您的GMobile帐户输入用户名和密码</string>
   <string name="assistant_display_name_optional">显示名(可选)</string>
-  <string name="assistant_linphone_account">使用您的Linphone帐户</string>
+  <string name="assistant_linphone_account">使用您的GMobile帐户</string>
   <string name="assistant_generic_account">使用SIP 帐户</string>
   <string name="assistant_remote_provisioning_title">获取远程配置</string>
   <string name="assistant_fetch_apply">获取并应用</string>
@@ -107,8 +107,8 @@
   <string name="use_email_for_validation">使用邮箱地址来激活帐户</string>
   <string name="login_with_username">用您的用户名和密码来代替电话号码</string>
   <string name="phone_number_info_title">我的电话号码将用于？</string>
-  <string name="phone_number_link_info_content">如果将您的帐户关联您的电话号码，您的朋友们可以更容易的找到你。您在通讯录里可以查看谁在使用Linphone，他们也同样可以通过Linphone联系您。</string>
-  <string name="phone_number_link_info_content_already_account">您的电话号码只能关联一个Linphone帐户。如果您已经把您的号码关联了其他账户，但是你更想使用这个。只需关联您现在的帐户，你的号码就会自动转移到这个账户。</string>
+  <string name="phone_number_link_info_content">如果将您的帐户关联您的电话号码，您的朋友们可以更容易的找到你。您在通讯录里可以查看谁在使用GMobile，他们也同样可以通过GMobile联系您。</string>
+  <string name="phone_number_link_info_content_already_account">您的电话号码只能关联一个GMobile帐户。如果您已经把您的号码关联了其他账户，但是你更想使用这个。只需关联您现在的帐户，你的号码就会自动转移到这个账户。</string>
   <!--Status-->
   <string name="invalid_email">无效的邮箱</string>
   <string name="account_already_exist">帐户已存在</string>
@@ -390,7 +390,7 @@
   <string name="content_description_search_contact">搜索联系人</string>
   <string name="content_description_search_country">搜索国家</string>
   <string name="content_description_all_contacts">所有联系人</string>
-  <string name="content_description_linphone_contacts">Linphone联系人</string>
+  <string name="content_description_linphone_contacts">GMobile联系人</string>
   <string name="content_description_call_direction">呼叫改向</string>
   <string name="content_description_all_calls">所有电话</string>
   <string name="content_description_missed_calls">未接来电</string>

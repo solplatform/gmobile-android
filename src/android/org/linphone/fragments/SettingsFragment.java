@@ -69,6 +69,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import java.util.Timer;
+
 public class SettingsFragment extends PreferencesListFragment {
     private LinphonePreferences mPrefs;
     private Handler mHandler = new Handler();
@@ -1287,6 +1289,11 @@ public class SettingsFragment extends PreferencesListFragment {
             @Override
             public boolean onPreferenceChange(Preference preference, Object newValue) {
                 mPrefs.setPushNotificationEnabled((Boolean) newValue);
+                if ((Boolean) newValue) {
+                    LinphoneService.instance().hideServiceNotification();
+                } else {
+                    LinphoneService.instance().showServiceNotification();
+                }
                 return true;
             }
         });
@@ -1307,6 +1314,7 @@ public class SettingsFragment extends PreferencesListFragment {
         ((CheckBoxPreference) findPreference(getString(R.string.pref_background_mode_key))).setChecked(mPrefs.isBackgroundModeEnabled());
         ((CheckBoxPreference) findPreference(getString(R.string.pref_service_notification_key))).setChecked(mPrefs.getServiceNotificationVisibility());
         ((CheckBoxPreference) findPreference(getString(R.string.pref_autostart_key))).setChecked(mPrefs.isAutoStartEnabled());
+        ((CheckBoxPreference) findPreference(getString(R.string.pref_use_gmobile_tag_key))).setChecked(mPrefs.isUseGmobileTag());
         setPreferenceDefaultValueAndSummary(R.string.pref_remote_provisioning_key, mPrefs.getRemoteProvisioningUrl());
         setPreferenceDefaultValueAndSummary(R.string.pref_display_name_key, mPrefs.getDefaultDisplayName());
         setPreferenceDefaultValueAndSummary(R.string.pref_user_name_key, mPrefs.getDefaultUsername());
@@ -1370,6 +1378,30 @@ public class SettingsFragment extends PreferencesListFragment {
             public boolean onPreferenceChange(Preference preference, Object newValue) {
                 boolean value = (Boolean) newValue;
                 mPrefs.setAutoStart(value);
+                return true;
+            }
+        });
+
+        findPreference(getString(R.string.pref_use_gmobile_tag_key)).setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                boolean value = (Boolean) newValue;
+                mPrefs.setUseGmobileTag(value);
+                Timer mTimer = new java.util.Timer();
+                mTimer.schedule(
+                        new java.util.TimerTask() {
+                            @Override
+                            public void run() {
+                                /*
+                                Intent i = LinphoneService.instance().getBaseContext().getPackageManager().getLaunchIntentForPackage( LinphoneService.instance().getBaseContext().getPackageName() );
+                                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                startActivity(i);
+                                 */
+                                LinphoneActivity.instance().quit();
+                            }
+                        },
+                        1500
+                );
                 return true;
             }
         });

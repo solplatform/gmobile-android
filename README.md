@@ -1,6 +1,4 @@
-[![pipeline status](https://gitlab.linphone.org/BC/public/linphone-android/badges/master/pipeline.svg)](https://gitlab.linphone.org/BC/public/linphone-android/commits/master)
-
-Linphone is a free VoIP and video softphone based on the SIP protocol.
+GMobile is a free VoIP and video softphone based on the SIP protocol.
 
 # COMPILATION INSTRUCTIONS
 
@@ -56,7 +54,7 @@ You can speed up the compilation by using ccache (compiler cache, see [ccache.sa
 
 ## Firebase
 
-To enable firebase in Linphone, just add your 'google-service.json' in project root, add your key at 'push_sender_id' and add 'firebase' at 'push_type' in 'res/values/non_localizable_custom.xml'
+To enable firebase in GMobile, just add your 'google-service.json' in project root, add your key at 'push_sender_id' and add 'firebase' at 'push_type' in 'res/values/non_localizable_custom.xml'
 Be sure to have all services for Firebase in your 'AndroidManifest.xml'
 
 # TROUBLESHOOTING
@@ -90,11 +88,4 @@ returned null
 The build options are to be passed to the *prepare.py* script. For example to enable the x264 encoder give the *"-DENABLE_X264=YES"* to *prepare.py*.
 
 The available options can be listed with the `./prepare.py --list-features`
-
-# CONTRIBUTIONS
-
-In order to submit a patch for inclusion in linphone's source code:
-
-1.    First make sure your patch applies to latest git sources before submitting: patches made to old versions can't be merged.
-2.    Fill out and send us an email with the link of pullrequest and the [Contributor Agreement](http://www.belledonne-communications.com/downloads/Belledonne_communications_CA.pdf) for your patch to be included in the git tree. The goal of this agreement to grant us peaceful exercise of our rights on the linphone source code, while not losing your rights on your contribution.
 

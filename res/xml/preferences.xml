@@ -389,6 +389,11 @@
 					android:key="@string/pref_autostart_key"
 					android:persistent="false"/>
 
+				<CheckBoxPreference
+					android:title="@string/pref_use_gmobile_tag"
+					android:key="@string/pref_use_gmobile_tag_key"
+					android:persistent="true"/>
+
 				 <EditTextPreference
 					android:title="@string/pref_remote_provisioning_title"
 					android:key="@string/pref_remote_provisioning_key"

@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
   <!--Custom-->
-  <string name="app_name">Linphone</string>
-  <string name="service_name">Linphone Hizmeti</string>
-  <string name="addressbook_label">Linphone</string>
-  <string name="notification_title">Linphone</string>
+  <string name="app_name">GMobile</string>
+  <string name="service_name">GMobile Hizmeti</string>
+  <string name="addressbook_label">GMobile</string>
+  <string name="notification_title">GMobile</string>
   <string name="wait_dialog_text">Başlatılıyor</string>
   <string name="notification_registered">%s kayıtlı</string>
   <string name="notification_register_failure">%s kaydedilemedi</string>
   <string name="tunnel_host"></string>
-  <string name="about_version">Linphone Android %s</string>
-  <string name="about_liblinphone_version">Linphone Çekirdeği %s</string>
-  <string name="about_link">www.linphone.org</string>
-  <string name="sync_account_name">Linphone bağlantıları</string>
+  <string name="about_version">GMobile Android %s</string>
+  <string name="about_liblinphone_version">GMobile Çekirdeği %s</string>
+  <string name="about_link">www.gmobile.ltd</string>
+  <string name="sync_account_name">GMobile bağlantıları</string>
   <!--Common-->
   <string name="username">Kullanıcı adı</string>
   <string name="userid">Kullanıcı kimliği (isteğe bağlı)</string>
@@ -51,7 +51,7 @@
   <string name="link_account">Hesabını bağla</string>
   <string name="update_available">Güncelleme var</string>
   <!--Launch screen-->
-  <string name="app_description"><i>özgür</i> SIP istemcisi</string>
+
   <!--Assistant-->
   <string name="welcome">Hoş geldiniz</string>
   <string name="assistant">Yardımcı</string>
@@ -63,20 +63,20 @@
   <string name="assistant_validate_account_1">Hesabınız oluşturuldu. Hesabınızı doğrulamak için postanızı denetleyin:</string>
   <string name="assistant_validate_account_2">Bittiğinde, buraya geri dönün ve düğmeye tıklayın.</string>
   <string name="assistant_welcome_desc">Bu yardımcı, SIP hesabınızı yapılandırmaya ve kullanmanıza yardım edecek.</string>
-  <string name="assistant_linphone_login_desc">Lütfen Linphone hesabınızın kullanıcı adını ve parolasını girin</string>
+  <string name="assistant_linphone_login_desc">Lütfen GMobile hesabınızın kullanıcı adını ve parolasını girin</string>
   <string name="assistant_login_desc">Lütfen SIP alan adınızla birlikte kullanıcı adınızı ve parolanızı girin</string>
   <string name="assistant_remote_provisioning_desc">Lütfen yetkilendirme adresinizi girin</string>
   <string name="transport">Taşıma</string>
   <string name="assistant_create_account_phone_number_address">SIP adresiniz</string>
-  <string name="assistant_login_linphone">Linphone hesabı kullan</string>
+  <string name="assistant_login_linphone">GMobile hesabı kullan</string>
   <string name="assistant_login_generic">SIP hesabı kullan</string>
   <string name="assistant_remote_provisioning">Uzaktan yapılandırma al</string>
   <string name="assistant_create_account_part_1">Lütfen ülke kodunuzu doğrulayın  ve telefon numaranızı girin</string>
   <string name="assistant_create_account_part_2">Telefon numaranıza SMS ile bir doğrulama kodu gönderdik:</string>
   <string name="assistant_create_account_part_3">Telefon numarası doğrulamayı tamamlamak için, lütfen 4 haneli kodu aşağı girin:\n</string>
-  <string name="assistant_create_account_part_email">Lütfen Linphone hesabınız için bir kullanıcı adı, e-posta ve parola girin</string>
+  <string name="assistant_create_account_part_email">Lütfen GMobile hesabınız için bir kullanıcı adı, e-posta ve parola girin</string>
   <string name="assistant_display_name_optional">Görünen ad (isteğe bağlı)</string>
-  <string name="assistant_linphone_account">Linphone hesabını kullan</string>
+  <string name="assistant_linphone_account">GMobile hesabını kullan</string>
   <string name="assistant_generic_account">SIP hesabı kullan</string>
   <string name="assistant_remote_provisioning_title">Uzaktan yapılandırma al</string>
   <string name="assistant_fetch_apply">Al ve uygula</string>
@@ -112,9 +112,9 @@
   <string name="use_email_for_validation">Hesap doğrulama için e-posta adresi kullan</string>
   <string name="login_with_username">Telefon numaranız yerine kullanıcı adınızı ve parolanızı kullanın</string>
   <string name="phone_number_info_title">Telefon numaram ne için kullanılacak?</string>
-  <string name="phone_number_info_content">\nTelefon numaranız sayesinde arkadaşlarınız sizi daha kolay bulacak.\n\n Adres defterinizde kimlerin Linphone kullandığını göreceksiniz ve arkadaşlarınız da size Linphone\'dan ulaşabileceklerini bilecek.\n</string>
-  <string name="phone_number_link_info_content">\nEğer hesabını telefon numarana bağlarsan arkadaşların seni daha kolay bulacak\n\nAdres listende kimlerin Linphone kullandığını göreceksin ve arkadaşların da sana Linphone üzerinden ulaşabileceğini bilecek.\n</string>
-  <string name="phone_number_link_info_content_already_account">Telefon numaranı yalnızca tek Linphone hesabıyla kullanabilirsin.\n\nEğer hesabını zaten başka bir hesaba bağladıysan ama bunu kullanmak istiyorsan, şimdi bağla ve numaran kendiliğinden bu hesaba taşınsın.</string>
+  <string name="phone_number_info_content">\nTelefon numaranız sayesinde arkadaşlarınız sizi daha kolay bulacak.\n\n Adres defterinizde kimlerin GMobile kullandığını göreceksiniz ve arkadaşlarınız da size GMobile\'dan ulaşabileceklerini bilecek.\n</string>
+  <string name="phone_number_link_info_content">\nEğer hesabını telefon numarana bağlarsan arkadaşların seni daha kolay bulacak\n\nAdres listende kimlerin GMobile kullandığını göreceksin ve arkadaşların da sana GMobile üzerinden ulaşabileceğini bilecek.\n</string>
+  <string name="phone_number_link_info_content_already_account">Telefon numaranı yalnızca tek GMobile hesabıyla kullanabilirsin.\n\nEğer hesabını zaten başka bir hesaba bağladıysan ama bunu kullanmak istiyorsan, şimdi bağla ve numaran kendiliğinden bu hesaba taşınsın.</string>
   <!--Status-->
   <string name="invalid_email">Geçersiz e-posta</string>
   <string name="account_already_exist">Hesap zaten var</string>
@@ -369,7 +369,7 @@
   <string name="pref_sipinfo_dtmf">Bant dışı DTMF(SIP INFO) gönder</string>
   <string name="pref_call_timeout_title">Çağrı zaman aşımı (saniye türünde)</string>
   <string name="pref_voice_mail">Sesli posta adresi</string>
-  <string name="pref_dialer_call">Linphone\'u öntanımlı telefon uygulaması olarak kullan</string>
+  <string name="pref_dialer_call">GMobile\'u öntanımlı telefon uygulaması olarak kullan</string>
   <!--Chat settings-->
   <string name="pref_chat_title">Konuşma</string>
   <string name="pref_image_sharing_server_title">Paylaşım sunucusu</string>
@@ -449,7 +449,7 @@
   <string name="content_description_search_contact">Bağlantı ara</string>
   <string name="content_description_search_country">Ülke ara</string>
   <string name="content_description_all_contacts">Tüm bağlantılar</string>
-  <string name="content_description_linphone_contacts">Linphone bağlantıları</string>
+  <string name="content_description_linphone_contacts">GMobile bağlantıları</string>
   <string name="content_description_call_direction">Çağrı yönlendirme</string>
   <string name="content_description_all_calls">Tüm çağrılar</string>
   <string name="content_description_missed_calls">Yanıtsız çağrılar</string>

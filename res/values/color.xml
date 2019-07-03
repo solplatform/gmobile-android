@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorA">#ff5e00</color>
+    <color name="colorA">#ff0000</color>
     <color name="colorB">#000000</color>
     <color name="colorC">#444444</color>
     <color name="colorD">#808080</color>
@@ -12,7 +12,7 @@
     <color name="colorJ">#ffa645</color>
     <color name="colorK">#3eb5c0</color>
     <color name="colorL">#96c11f</color>
-    <color name="notification_color_led">#FF8000</color>
+    <color name="notification_color_led">#8A7F8E</color>
 
     <color name="transparent">#00000000</color>
 </resources>

@@ -408,7 +408,7 @@ public class ContactsManager extends ContentObserver implements FriendListListen
                     mActivity,
                     ContactsContract.Data.CONTENT_URI,
                     PROJECTION,
-                    Data.IN_VISIBLE_GROUP + " == 1",
+                    Data.IN_VISIBLE_GROUP + " == 0 OR " + Data.IN_VISIBLE_GROUP + " == 1", //+ (LinphonePreferences.instance().isUseGmobileTag() ? '1':'0'),
                     null,
                     null
             );

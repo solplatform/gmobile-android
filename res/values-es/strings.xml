@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
   <!--Custom-->
-  <string name="app_name">Linphone</string>
-  <string name="service_name">Linphone Service</string>
-  <string name="addressbook_label">Linphone</string>
-  <string name="notification_title">Linphone</string>
+  <string name="app_name">GMobile</string>
+  <string name="service_name">GMobile Service</string>
+  <string name="addressbook_label">GMobile</string>
+  <string name="notification_title">GMobile</string>
   <string name="wait_dialog_text">Iniciando</string>
   <string name="tunnel_host"></string>
-  <string name="sync_account_name">contactos linphone</string>
+  <string name="sync_account_name">contactos gmobile</string>
   <!--Common-->
   <string name="username">Nombre de usuario</string>
   <string name="userid">ID de usuario (opcional)</string>
@@ -193,7 +193,7 @@
   <string name="content_description_add">Añadir llamada</string>
   <string name="content_description_search">Buscar</string>
   <string name="content_description_all_contacts">Todos los contactos</string>
-  <string name="content_description_linphone_contacts">Contactos de Linphone</string>
+  <string name="content_description_linphone_contacts">Contactos de GMobile</string>
   <string name="content_description_all_calls">Todas las llamadas</string>
   <string name="content_description_missed_calls">Llamadas perdidas</string>
   <string name="content_description_switch_video">Conmutar vídeo</string>

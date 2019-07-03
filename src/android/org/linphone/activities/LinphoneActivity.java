@@ -195,7 +195,7 @@ public class LinphoneActivity extends LinphoneGenericActivity implements OnClick
             }
         }
 
-        if (getResources().getBoolean(R.bool.use_linphone_tag)) {
+        if (LinphonePreferences.instance().isUseGmobileTag()) {
             if (getPackageManager().checkPermission(Manifest.permission.WRITE_SYNC_SETTINGS, getPackageName()) != PackageManager.PERMISSION_GRANTED) {
                 checkSyncPermission();
             } else {
@@ -1566,6 +1566,7 @@ public class LinphoneActivity extends LinphoneGenericActivity implements OnClick
         if (getResources().getBoolean(R.bool.enable_in_app_purchase)) {
             sideMenuItems.add(getResources().getString(R.string.inapp));
         }
+        sideMenuItems.add(getResources().getString(R.string.menu_invitation));
         sideMenuItems.add(getResources().getString(R.string.menu_about));
         sideMenuContent = findViewById(R.id.side_menu_content);
         sideMenuItemList = findViewById(R.id.item_list);
@@ -1577,6 +1578,15 @@ public class LinphoneActivity extends LinphoneGenericActivity implements OnClick
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if (sideMenuItemList.getAdapter().getItem(i).toString().equals(getString(R.string.menu_settings))) {
                     LinphoneActivity.instance().displaySettings();
+                }
+                if (sideMenuItemList.getAdapter().getItem(i).toString().equals(getString(R.string.menu_invitation))) {
+                    ProxyConfig proxy = LinphoneManager.getLc().getDefaultProxyConfig();
+                    Uri address = Uri.parse("https://gmobile.ltd/invitation/");
+                    if (proxy != null) {
+                        address = Uri.parse("https://gmobile.ltd/invitation/?" + proxy.getIdentityAddress().asStringUriOnly());
+                    }
+                    Intent openlink = new Intent(Intent.ACTION_VIEW, address);
+                    startActivity(openlink);
                 }
                 if (sideMenuItemList.getAdapter().getItem(i).toString().equals(getString(R.string.menu_about))) {
                     LinphoneActivity.instance().displayAbout();

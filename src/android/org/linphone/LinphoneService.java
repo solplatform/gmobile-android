@@ -39,9 +39,18 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.SystemClock;
+import android.os.PowerManager;
+import android.os.Message;
 import android.provider.ContactsContract;
 import android.provider.MediaStore;
 import android.view.WindowManager;
+
+import android.media.ToneGenerator;
+import android.media.AudioManager;
+import android.support.annotation.RequiresApi;
+import android.content.BroadcastReceiver;
+import android.content.IntentFilter;
+import android.provider.Settings;
 
 import org.linphone.activities.LinphoneActivity;
 import org.linphone.compatibility.Compatibility;
@@ -60,12 +69,17 @@ import org.linphone.mediastream.Log;
 import org.linphone.mediastream.Version;
 import org.linphone.receivers.BluetoothManager;
 import org.linphone.receivers.KeepAliveReceiver;
+
+//import org.linphone.receivers.AlarmManagerBroadcastReceiver;
+
 import org.linphone.ui.LinphoneOverlay;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashMap;
+
+//import java.util.Timer;
 
 /**
  * Linphone service, reacting to Incoming calls, ...<br />
@@ -93,6 +107,9 @@ public final class LinphoneService extends Service {
     private final static int CUSTOM_NOTIF_ID = 4;
     private final static int MISSED_NOTIF_ID = 5;
     private final static int SAS_NOTIF_ID = 6;
+
+    // Таймер используется в SettingsFragment.java:findPreference(getString(R.string.pref_push_notification_key)).setOnPreferenceChangeListener(new OnPreferenceChangeListener()
+    //public Timer mTimer;
 
     public static boolean isReady() {
         return instance != null && instance.mTestDelayElapsed;
@@ -217,6 +234,13 @@ public final class LinphoneService extends Service {
         @Override
         public void onActivityStopped(Activity activity) {
             Log.i("Activity stopped:" + activity);
+
+            if (!LinphonePreferences.instance().isPushNotificationEnabled()) {
+                showServiceNotification();
+                //activity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+            } else {
+                //activity.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+            }
         }
 
         @Override
@@ -364,12 +388,12 @@ public final class LinphoneService extends Service {
                         }
                     }
 
-
                     Intent missedCallNotifIntent = new Intent(LinphoneService.this, incomingReceivedActivity);
                     missedCallNotifIntent.putExtra("GoToHistory", true);
                     PendingIntent intent = PendingIntent.getActivity(LinphoneService.this, 0, missedCallNotifIntent, PendingIntent.FLAG_UPDATE_CURRENT);
                     Notification notif = Compatibility.createMissedCallNotification(instance, getString(R.string.missed_calls_notif_title), body, intent);
                     notifyWrapper(MISSED_NOTIF_ID, notif);
+
                 }
 
                 if (state == State.StreamsRunning) {
@@ -502,7 +526,85 @@ public final class LinphoneService extends Service {
         }
 
         mWindowManager = (WindowManager) getSystemService(WINDOW_SERVICE);
+
+        /*
+        alarm = new AlarmManagerBroadcastReceiver();
+        alarm.SetAlarm(this.getApplicationContext());
+        */
+        //context = this.getApplicationContext();
+        final PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            BroadcastReceiver receiver = new BroadcastReceiver() {
+                @RequiresApi(api = Build.VERSION_CODES.M)
+                //@Override
+                public void onReceive(Context context, Intent intent) {
+                    if (LinphonePreferences.instance().isPushNotificationEnabled())
+                        return;
+                    PowerManager pm = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
+                    if (pm.isDeviceIdleMode()) {
+                        // the device is now in doze mode
+                        //tg.startTone(ToneGenerator.TONE_PROP_BEEP);
+                        //PowerManager pm = (PowerManager) getApplicationContext().getSystemService(Context.POWER_SERVICE);
+                        PowerManager.WakeLock wakeLock = pm.newWakeLock((PowerManager.SCREEN_BRIGHT_WAKE_LOCK | PowerManager.FULL_WAKE_LOCK | PowerManager.ACQUIRE_CAUSES_WAKEUP), "gmobile:BRIGHT");
+                        wakeLock.acquire();
+                        wakeLock.release();
+                    } else {
+                        // the device just woke up from doze mode
+                        //tg.startTone(ToneGenerator.TONE_PROP_BEEP);
+                        if (LinphonePreferences.instance().isPushNotificationEnabled())
+                            showServiceNotification();
+                    }
+                }
+            };
+            this.getApplicationContext().registerReceiver(receiver, new IntentFilter(PowerManager.ACTION_DEVICE_IDLE_MODE_CHANGED));
+        }
+
+        /*
+        wl = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "gmobile:DozeLock");
+        if (!LinphonePreferences.instance().isPushNotificationEnabled()) {
+            wl.acquire();
+        }
+        */
+
+        /*
+        mHandlerAlarm = new Handler(mHandlerCallback);
+        if (!LinphonePreferences.instance().isPushNotificationEnabled())
+            mHandlerAlarm.sendEmptyMessage(0);
+        */
     }
+    /*
+    public Handler mHandlerAlarm;
+    private Handler.Callback mHandlerCallback = new Handler.Callback() {
+        public boolean handleMessage(Message msg) {
+            tg.startTone(ToneGenerator.TONE_PROP_BEEP);
+            if (!LinphonePreferences.instance().isPushNotificationEnabled()) {
+                mHandlerAlarm.sendEmptyMessageDelayed(0, 30000);
+            }
+            return false;
+        }
+    };
+    */
+    //private PowerManager pm;
+    //public PowerManager.WakeLock wl;
+    //public Context context;
+    //public AlarmManagerBroadcastReceiver alarm;
+    //final ToneGenerator tg = new ToneGenerator(AudioManager.STREAM_NOTIFICATION, 100);
+
+    /*
+    @TargetApi(23)
+    public static void openBatteryOptimizationSettings(Context context) {
+        String packageName = context.getPackageName();
+        Intent intent = new Intent(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS,
+                Uri.parse("package:" + packageName));
+        PowerManager pm = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
+
+        if (!pm.isIgnoringBatteryOptimizations(packageName)) {
+            //intent.setAction(Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS);
+            context.startActivity(intent);
+        }
+    }
+    */
 
     public void createOverlay() {
         if (mOverlay != null) destroyOverlay();
@@ -860,14 +962,22 @@ public final class LinphoneService extends Service {
             // If push is enabled, don't unregister account, otherwise do unregister
             if (LinphonePreferences.instance().isPushNotificationEnabled()) {
                 if (lc != null) lc.setNetworkReachable(false);
+                stopSelf();
+            } else {
+                showServiceNotification();
             }
-            stopSelf();
+
         }
         super.onTaskRemoved(rootIntent);
     }
 
     @Override
     public synchronized void onDestroy() {
+        /*
+        if (wl != null && wl.isHeld()) {
+            wl.release();
+        }
+        */
         if (activityCallbacks != null) {
             getApplication().unregisterActivityLifecycleCallbacks(activityCallbacks);
             activityCallbacks = null;

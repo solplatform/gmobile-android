@@ -10,8 +10,8 @@
   <string name="notification_register_failure">‫فشل %s في التسجيل‬</string>
   <string name="tunnel_host"></string>
   <string name="about_version">لِنْفُونْ أندرويد %s</string>
-  <string name="about_liblinphone_version">Linphone Core %s</string>
-  <string name="about_link">www.linphone.org</string>
+  <string name="about_liblinphone_version">GMobile Core %s</string>
+  <string name="about_link">www.gmobile.ltd</string>
   <string name="sync_account_name">جهات اتصال لِنْفُونْ</string>
   <!--Common-->
   <string name="username">اسم المستخدم</string>
@@ -49,7 +49,7 @@
   <string name="yes">نعم</string>
   <string name="link_account">اربط حسابك</string>
   <!--Launch screen-->
-  <string name="app_description">‫الزبون SIP <i>الحر</i>‬</string>
+
   <!--Assistant-->
   <string name="welcome">مرحبا</string>
   <string name="assistant">المرشد</string>
@@ -415,7 +415,7 @@
   <string name="content_description_search_contact">ابحث عن جهة الاتصال</string>
   <string name="content_description_search_country">ابحث عن البلد</string>
   <string name="content_description_all_contacts">كل جهات الاتصال</string>
-  <string name="content_description_linphone_contacts">جهات اتصال Linphone</string>
+  <string name="content_description_linphone_contacts">جهات اتصال GMobile</string>
   <string name="content_description_call_direction">اتجاه الاتصال</string>
   <string name="content_description_all_calls">كل المكالمات</string>
   <string name="content_description_missed_calls">المكالمات الفائتة</string>

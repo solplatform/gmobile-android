@@ -1315,6 +1315,14 @@ public class LinphonePreferences {
         getConfig().setBool("app", "auto_start", autoStartEnabled);
     }
 
+    public boolean isUseGmobileTag() {
+        return getConfig().getBool("app", "use_gmobile_tag", true);
+    }
+
+    public void setUseGmobileTag(boolean value) {
+        getConfig().setBool("app", "use_gmobile_tag", value);
+    }
+
     public String getSharingPictureServerUrl() {
         if (getLc() == null) return null;
         return getLc().getFileTransferServer();

@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
   <!--Custom-->
-  <string name="app_name">Linphone</string>
-  <string name="service_name">Linphone-dienst</string>
-  <string name="addressbook_label">Linphone</string>
-  <string name="notification_title">Linphone</string>
+  <string name="app_name">GMobile</string>
+  <string name="service_name">GMobile-dienst</string>
+  <string name="addressbook_label">GMobile</string>
+  <string name="notification_title">GMobile</string>
   <string name="wait_dialog_text">Bezig met opstarten</string>
   <string name="notification_registered">%s geregistreerd</string>
   <string name="notification_register_failure">%s registratie mislukt</string>
   <string name="tunnel_host"></string>
-  <string name="about_version">Linphone Android %s</string>
-  <string name="about_liblinphone_version">Linphone Core %s</string>
+  <string name="about_version">GMobile Android %s</string>
+  <string name="about_liblinphone_version">GMobile Core %s</string>
   <!--Common-->
   <string name="username">Gebruikersnaam</string>
   <string name="phone_number">Telefoonnummer</string>
@@ -44,7 +44,7 @@
   <string name="ok">prima</string>
   <string name="yes">Ja</string>
   <!--Launch screen-->
-  <string name="app_description">omschrijving</string>
+
   <!--Assistant-->
   <string name="welcome">Welkom</string>
   <string name="assistant">Assistent</string>

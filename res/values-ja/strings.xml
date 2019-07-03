@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
   <!--Custom-->
-  <string name="app_name">Linphone</string>
+  <string name="app_name">GMobile</string>
   <string name="service_name">サービス</string>
-  <string name="addressbook_label">Linphone</string>
-  <string name="notification_title">Linphone</string>
+  <string name="addressbook_label">GMobile</string>
+  <string name="notification_title">GMobile</string>
   <string name="wait_dialog_text">はじめる</string>
   <string name="notification_registered">%sを登録しました</string>
   <string name="notification_register_failure">%sの登録に失敗しました</string>
   <string name="tunnel_host"></string>
-  <string name="about_version">Linphone Android %s</string>
-  <string name="about_liblinphone_version">Linphone Core %s</string>
-  <string name="about_link">www.linphone.org</string>
-  <string name="sync_account_name">linphoneに問い合わせる</string>
+  <string name="about_version">GMobile Android %s</string>
+  <string name="about_liblinphone_version">GMobile Core %s</string>
+  <string name="about_link">www.gmobile.ltd</string>
+  <string name="sync_account_name">gmobileに問い合わせる</string>
   <!--Common-->
   <string name="username">ユーザー名</string>
   <string name="userid">ユーザID(オプション)</string>
@@ -49,7 +49,7 @@
   <string name="yes">はい</string>
   <string name="link_account">アカウントをリンクする</string>
   <!--Launch screen-->
-  <string name="app_description"><i>自由な</i>クライアント</string>
+
   <!--Assistant-->
   <string name="welcome">ようこそ</string>
   <string name="assistant">アシスタント</string>
@@ -61,20 +61,20 @@
   <string name="assistant_validate_account_1">アカウントが作成されました。メールを確認してください：</string>
   <string name="assistant_validate_account_2">完了したら戻ってボタンを押してください。</string>
   <string name="assistant_welcome_desc">SIPアカウントの設定をお助けします。</string>
-  <string name="assistant_linphone_login_desc">Linphoneのアカウントのユーザ名とパスワードを入力してください</string>
+  <string name="assistant_linphone_login_desc">GMobileのアカウントのユーザ名とパスワードを入力してください</string>
   <string name="assistant_login_desc">SIPドメインのユーザ名とパスワードを入力してください</string>
   <string name="assistant_remote_provisioning_desc">プロビショニングURLを入力してください</string>
   <string name="transport">トランスポート</string>
   <string name="assistant_create_account_phone_number_address">あなたのSIPアドレス</string>
-  <string name="assistant_login_linphone">Linphone で使う</string>
+  <string name="assistant_login_linphone">GMobile で使う</string>
   <string name="assistant_login_generic">SIPアカウント で使う</string>
   <string name="assistant_remote_provisioning">リモート設定</string>
   <string name="assistant_create_account_part_1">あなたの国コードを確認し、電話番号を入力してください</string>
   <string name="assistant_create_account_part_2">電話番号に確認コードを記載したSMSを送りました：</string>
   <string name="assistant_create_account_part_3">電話番号の確認を完了するには、4桁のコードを入力してください：\n</string>
-  <string name="assistant_create_account_part_email">Linphoneアカウントのユーザ名、電子メール、パスワードを入力してください</string>
+  <string name="assistant_create_account_part_email">GMobileアカウントのユーザ名、電子メール、パスワードを入力してください</string>
   <string name="assistant_display_name_optional">表示する名前(任意)</string>
-  <string name="assistant_linphone_account">Linphoneアカウント を使う</string>
+  <string name="assistant_linphone_account">GMobileアカウント を使う</string>
   <string name="assistant_generic_account">SIPアカウント で使う</string>
   <string name="assistant_remote_provisioning_title">リモート設定</string>
   <string name="assistant_fetch_apply">取得して適用する</string>
@@ -111,7 +111,7 @@
   <string name="phone_number_info_title">私の電話番号は何のために使われますか？</string>
   <string name="phone_number_link_info_content">
 \nLinphoneを使用しているあなたのアドレス帳に\nあなたが表示され、あなたの友人は\nLinphoneでもあなたに連絡できることを把握します。</string>
-  <string name="phone_number_link_info_content_already_account">アカウントを自分の電話番号にリンクすると、友人があなたをより簡単に見つけることができます。\n\n電話番号は、1つのLinphoneアカウントでのみ使用できます。\n\n既にあなたの番号を他のアカウントにリンクしていたが、\n\nこの番号を使用したい場合は、今すぐリンクする事で番号が自動的にこのアカウントに移動されます。</string>
+  <string name="phone_number_link_info_content_already_account">アカウントを自分の電話番号にリンクすると、友人があなたをより簡単に見つけることができます。\n\n電話番号は、1つのGMobileアカウントでのみ使用できます。\n\n既にあなたの番号を他のアカウントにリンクしていたが、\n\nこの番号を使用したい場合は、今すぐリンクする事で番号が自動的にこのアカウントに移動されます。</string>
   <!--Status-->
   <string name="invalid_email">無効なメールアドレスです</string>
   <string name="account_already_exist">既に存在しているアカウントです</string>
@@ -319,7 +319,7 @@
   <string name="pref_rfc2833_dtmf">DTMFをインバンド(RFC2833)で送信する</string>
   <string name="pref_sipinfo_dtmf">DTMFをSIP(情報)で送信する</string>
   <string name="pref_voice_mail">音声メールのURI</string>
-  <string name="pref_dialer_call">Linphoneを標準の電話アプリとして使う</string>
+  <string name="pref_dialer_call">GMobileを標準の電話アプリとして使う</string>
   <!--Chat settings-->
   <string name="pref_chat_title">チャット</string>
   <string name="pref_image_sharing_server_title">共有サーバー</string>
@@ -396,7 +396,7 @@
   <string name="content_description_search_contact">連絡先を検索する</string>
   <string name="content_description_search_country">国を探す</string>
   <string name="content_description_all_contacts">すべての連絡先</string>
-  <string name="content_description_linphone_contacts">Linphoneでの連絡先</string>
+  <string name="content_description_linphone_contacts">GMobileでの連絡先</string>
   <string name="content_description_call_direction">宛先を指定</string>
   <string name="content_description_all_calls">すべての呼出</string>
   <string name="content_description_missed_calls">失敗した呼出</string>
